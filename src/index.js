@@ -1,11 +1,4 @@
-import React, { createElement, Component, Children } from 'react';
-import PropTypes from 'prop-types';
-
-const storeShape = PropTypes.shape({
-  getState: PropTypes.func.isRequired,
-  dispatch: PropTypes.func.isRequired,
-  subscribe: PropTypes.func.isRequired
-});
+import EReact, { createElement, Component, Children } from 'ereact';
 
 const storeKey = 'store';
 
@@ -25,12 +18,8 @@ export class Provider extends Component {
   render() {
     const { children } = this.props;
 
-    return Children.only(children);
+    return children;
   }
-}
-
-Provider.childContextTypes = {
-  [storeKey]: storeShape
 }
 
 function connectAdvanced({
@@ -91,10 +80,6 @@ function connectAdvanced({
 
         return createElement(WrappedComponent, { ...props, ...extraProps });
       }
-    }
-
-    Connect.contextTypes = {
-      [storeKey]: storeShape
     }
 
     Connect.displayName = displayName;
