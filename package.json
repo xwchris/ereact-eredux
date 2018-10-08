@@ -1,6 +1,6 @@
 {
   "name": "ereact-eredux",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a simple react-redux repo",
   "main": "./public/ereact-eredux.js",
   "scripts": {
