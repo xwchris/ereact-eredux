@@ -1,10 +1,14 @@
 {
   "name": "ereact-eredux",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a simple react-redux repo",
-  "main": "./dist/ereact-eredux.js",
+  "main": "./index.js",
   "scripts": {
-    "build": "NODE_ENV=production webpack"
+    "clean": "rm -rf dist",
+    "build-production": "NODE_ENV=production webpack",
+    "build-development": "NODE_ENV=development webpack",
+    "build": "npm run build-production; npm run build-development",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -19,9 +23,13 @@
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.1.2",
+    "@babel/plugin-transform-react-jsx": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.4",
     "ereact": "^1.0.2",
+    "jest": "^23.6.0",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2"
   }

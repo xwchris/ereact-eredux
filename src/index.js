@@ -1,4 +1,4 @@
-import EReact, { createElement, Component, Children } from 'ereact';
+import { createElement, Component } from 'ereact';
 
 const storeKey = 'store';
 
