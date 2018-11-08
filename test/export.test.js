@@ -1,5 +1,5 @@
 import { Provider, connect } from '../index';
-import { createElement } from 'ereact';
+import EReact from 'ereact';
 
 describe('test export', () => {
   test('provider and connect is not undefined', () => {

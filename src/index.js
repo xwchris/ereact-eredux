@@ -1,8 +1,8 @@
-import { createElement, Component } from 'ereact';
+import EReact from 'ereact';
 
 const storeKey = 'store';
 
-export class Provider extends Component {
+export class Provider extends EReact.Component {
   constructor(props){
     super(props);
 
