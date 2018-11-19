@@ -1,8 +1,8 @@
-import EReact from 'ereact';
+import EReact, { Component } from 'ereact';
 
 const storeKey = 'store';
 
-export class Provider extends EReact.Component {
+export class Provider extends Component {
   constructor(props){
     super(props);
 
@@ -71,7 +71,7 @@ function connectAdvanced({
           }
         }
 
-        return props;
+        return {...props, ...store};
       }
 
       render() {
