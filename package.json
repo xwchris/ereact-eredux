@@ -1,6 +1,6 @@
 {
   "name": "ereact-eredux",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "a simple react-redux repo",
   "main": "./index.js",
   "scripts": {
@@ -20,7 +20,9 @@
     "url": "https://github.com/xwchris/ereact-eredux/issues"
   },
   "homepage": "https://github.com/xwchris/ereact-eredux#readme",
-  "dependencies": {},
+  "dependencies": {
+    "ereact": "^2.0.2"
+  },
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/plugin-transform-react-jsx": "^7.0.0",
@@ -28,7 +30,6 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.4",
-    "ereact": "^2.0.1",
     "jest": "^23.6.0",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2"
