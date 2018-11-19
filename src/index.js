@@ -78,7 +78,7 @@ function connectAdvanced({
         const props = this.props;
         const extraProps = this.getExtraProps();
 
-        return createElement(WrappedComponent, { ...props, ...extraProps });
+        return EReact.createElement(WrappedComponent, { ...props, ...extraProps });
       }
     }
 
